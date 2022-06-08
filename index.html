@@ -6,75 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&family=Ropa+Sans&display=swap" rel="stylesheet"> 
     <title>Document</title>
-<style>
-   #kl,#kk{
-        display: flex;
-        height: 546px;
-        width: 357px;
-        background-color: rgb(45, 73, 90,1);
-        position: absolute;
-        margin: -41rem 0 0 29rem;
-        font-family: 'Readex Pro';
-        font-size: 43px;
-        color: #fffe84;
-    #kk{
-        height: 546px;
-        width: 357px;
-        margin: -41rem 0 0 67rem;
-    }
-    #a{
-        height: 50px;
-        width: 770px;
-        position: absolute;
-        margin: -55.6rem 0 0 36rem;
-        border: 4px solid #395f76;
-        border-radius: 10px;
-        background-color: #bbc5cbb0;
-        font-size: 30px;
-        box-sizing: border-box;
-        font-family: 'Redex Pro';
-        color: #fffe84;
-        font-weight: bolder;
-    }
-#submit{
-        height: 46px;
-        width: 70px;
-        color: white;
-        position: absolute;
-        margin: -55.6rem 0 0 85rem;
-        font-weight: bold;
-        background: red;
-        border: 5px solid red;
-        border-radius: 10px;
-}
-</style>
-</head>
-<body>
-   <div class="content" style="position: absolute;"></div><img src="Table-of-13.png" alt="" style="display:flex;width: 100%; height="100vh;"></div>
-   <div id="small-content" style="position: absolute;"><img src="cloud.png" alt=""style="height: 150px; width: 421px;position: absolute; margin: -61rem 0 0 95rem;"></div>
-   <div id="kl"></div>
-   <div id="kk"></div>
-  <input type="number" id="a" placeholder="fill any number"> 
-  <input type="submit" value="Submit" onclick="table()" id="submit">
-    <script>
-       
-function table(){
-    var e=Number(document.getElementById("a").value);
-    var saved_value=document.getElementById("kl");
-    saved_value.innerHTML="";
-    var saved=document.getElementById("kk");
-    saved.innerHTML="";
-    // console.log(e);
-    for(let i=1; i<=10; i++){
-        
-        // console.log(i);
-        saved_value.innerHTML += e +" x " +i+ " = "+e*i + "<br/>";
-    }
-    for(let w=11; w<=20; w++){
-        saved.innerHTML+= e +"x" +w+ "="+e*w + "<br/>";
-    }
-}
-
-    </script>
+   <style>
+        #kl,#kk{
+             display: flex;
+             height: 546px;
+             width: 357px;
+             background-color: rgb(45, 73, 90,1);
+             position: absolute;
+             margin: -41rem 0 0 29rem;
+             font-family: 'Readex Pro';
+             font-size: 43px;
+             color: #fffe84;
+            }
+         #kk{
+             height: 546px;
+             width: 396px;
+             margin: -41rem 0 0 67rem;
+         }
+         #a{
+             height: 50px;
+             width: 770px;
+             position: absolute;
+             margin: -55.6rem 0 0 36rem;
+             border: 4px solid #395f76;
+             border-radius: 10px;
+             background-color: #bbc5cbb0;
+             font-size: 30px;
+             box-sizing: border-box;
+             font-family: 'Redex Pro';
+             color: #fffe84;
+             font-weight: bolder;
+         }
+     #submit{
+             height: 46px;
+             width: 70px;
+             color: white;
+             position: absolute;
+             margin: -55.6rem 0 0 85rem;
+             font-weight: bold;
+             background: red;
+             border: 5px solid red;
+             border-radius: 10px;
+     }
+     </style>
+     </head>
+     <body>
+        <div class="content" style="position: absolute;"></div><img src="Table-of-13.png" alt="" style="display:flex;width:100%; height: 100vh;"></div>
+        <div id="small-content" style="position: absolute;"><img src="cloud.png" alt=""style="height: 150px; width: 421px;position: absolute; margin: -61rem 0 0 95rem;"></div>
+        <div id="kl"></div>
+        <div id="kk"></div>
+       <input type="number" id="a" placeholder="fill any number"> 
+       <input type="submit" value="Submit" onclick="table()" id="submit">
+         <script>
+            
+     function table(){
+         var e=Number(document.getElementById("a").value);
+         var saved_value=document.getElementById("kl");
+         saved_value.innerHTML="";
+         var saved=document.getElementById("kk");
+         saved.innerHTML="";
+         // console.log(e);
+         for(let i=1; i<=10; i++){
+             
+             // console.log(i);
+             saved_value.innerHTML += e +" x " +i+ " = "+e*i + "<br/>";
+         }
+         for(let w=11; w<=20; w++){
+             saved.innerHTML+= e +"x" +w+ "="+e*w + "<br/>";
+         }
+     }
+     
+         </script>
 </body>
 </html>
